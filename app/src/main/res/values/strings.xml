@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Incagram</string>
+    <string name="nombre">Santiago Osuna</string>
+    <string name="nombreApp">INCAGRAM</string>
+    <string name="esloganApp">Inicia una nueva aventura con Incagram y descubre una nueva forma de ver el mundo</string>
+    <string name="comienzabtn">Comienza</string>
+    <string name="registrate">Registrate</string>
+    <string name="información">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="usuario"> Usuario</string>
+    <string name="contrase_a"> Contraseña</string>
+    <string name="recupera">Recupera Tu Contraseña</string>
+    <string name="ingresa_con_google">Ingresa con Google</string>
+    <string name="no_tienes_cuenta">No tienes cuenta?</string>
+</resources>
