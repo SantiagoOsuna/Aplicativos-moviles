@@ -13,7 +13,6 @@
         android:gravity="center_horizontal"
         android:padding="20dp">
 
-        <!-- Imagen de usuario -->
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="206dp"
@@ -21,7 +20,6 @@
             android:src="@drawable/ic_usuario"
             android:layout_marginTop="40dp"/>
 
-        <!-- Nombre principal -->
         <TextView
             android:id="@+id/tv_Nombres"
             android:layout_width="wrap_content"
@@ -32,7 +30,6 @@
             android:textStyle="bold"
             android:layout_marginTop="20dp"/>
 
-        <!-- Campo nombre de usuario -->
         <EditText
             android:id="@+id/et_NameUser"
             android:layout_width="251dp"
@@ -42,7 +39,6 @@
             android:inputType="text"
             android:layout_marginTop="20dp"/>
 
-        <!-- Campo apellido -->
         <EditText
             android:id="@+id/et_LastnameUser"
             android:layout_width="251dp"
@@ -52,7 +48,6 @@
             android:inputType="text"
             android:layout_marginTop="15dp"/>
 
-        <!-- Campo correo -->
         <EditText
             android:id="@+id/et_EmailU"
             android:layout_width="251dp"
@@ -62,7 +57,6 @@
             android:inputType="textEmailAddress"
             android:layout_marginTop="15dp"/>
 
-        <!-- Campo teléfono -->
         <EditText
             android:id="@+id/et_PhoneU"
             android:layout_width="251dp"
@@ -82,7 +76,6 @@
             android:textSize="25sp"
             android:layout_marginTop="30dp"/>
 
-        <!-- Logo y nombre app abajo -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

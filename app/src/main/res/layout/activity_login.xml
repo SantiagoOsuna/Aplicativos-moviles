@@ -74,13 +74,14 @@
         app:srcCompat="@drawable/password" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/et_contraseña"
         android:layout_width="256dp"
         android:layout_height="57dp"
         android:background="@drawable/et_oval"
         android:ems="10"
         android:inputType="textPassword"
         android:hint="@string/contrase_a"
+        android:paddingStart="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.769"
@@ -185,6 +186,7 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:hint="@string/usuario"
+        android:paddingStart="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.754"

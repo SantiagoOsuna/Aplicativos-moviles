@@ -32,7 +32,7 @@
             android:layout_marginTop="20dp"/>
 
         <TextView
-            android:id="@+id/tv_infoRec"
+            android:id="@+id/tv_infoRecuperacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recuperarContra"
@@ -43,7 +43,7 @@
             android:layout_marginTop="30dp"/>
 
         <EditText
-            android:id="@+id/et_emailR"
+            android:id="@+id/et_emailRecuperacion"
             android:layout_width="266dp"
             android:layout_height="48dp"
             android:background="@drawable/et_oval"
