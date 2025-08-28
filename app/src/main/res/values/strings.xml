@@ -6,7 +6,7 @@
     <string name="nombreApp">INCAGRAM</string>
     <string name="esloganApp">Inicia una nueva aventura con Incagram y descubre una nueva forma de ver el mundo</string>
     <string name="comienzabtn">Comienza</string>
-    <string name="registrate">Registrate</string>
+    <string name="registrate">Regístrate</string>
     <string name="información">La aventura está por iniciar, por favor inicia sesión</string>
     <string name="ingresar">Ingresar</string>
     <string name="usuario"> Usuario</string>
@@ -17,12 +17,12 @@
     <string name="instrucciones">Ingresa tus datos para crear una nueva cuenta</string>
     <string name="name">Nombre</string>
     <string name="apellido">Apellido</string>
-    <string name="telefono">Telefono</string>
-    <string name="correo">Correo electronico</string>
+    <string name="telefono">Teléfono</string>
+    <string name="correo">Correo eléctronico</string>
     <string name="repetir_contrase_a">Repetir Contraseña</string>
-    <string name="terminos">Terminos y Condiciones</string>
+    <string name="terminos">Términos y Condiciones</string>
     <string name="acepto">Acepto los</string>
-    <string name="recuperarContra">Ingresa tu correo electrónico para recuperar tu contraseña</string>
+    <string name="recuperarContra">Ingresa tu correo eléctrónico para recuperar tu contraseña</string>
     <string name="enviar">Enviar</string>
     <string name="correoE">santiago@incagram.com</string>
     <string name="numero">1111111111</string>

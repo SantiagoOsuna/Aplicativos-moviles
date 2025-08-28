@@ -1,134 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cyan">
+    android:background="@color/cyan"
+    tools:context=".PerfilActivity">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="206dp"
-        android:layout_height="232dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.106"
-        app:srcCompat="@drawable/ic_usuario" />
-
-    <TextView
-        android:id="@+id/tv_Nombres"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nombre"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
 
-    <EditText
-        android:id="@+id/et_EmailU"
-        android:layout_width="251dp"
-        android:layout_height="43dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/correoE"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
+        <!-- Imagen de usuario -->
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="206dp"
+            android:layout_height="232dp"
+            android:src="@drawable/ic_usuario"
+            android:layout_marginTop="40dp"/>
 
-    <EditText
-        android:id="@+id/et_NameUser"
-        android:layout_width="251dp"
-        android:layout_height="43dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/nomusuario"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        <!-- Nombre principal -->
+        <TextView
+            android:id="@+id/tv_Nombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
 
-    <EditText
-        android:id="@+id/et_LastnameUser"
-        android:layout_width="251dp"
-        android:layout_height="43dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/apeusuario"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595" />
+        <!-- Campo nombre de usuario -->
+        <EditText
+            android:id="@+id/et_NameUser"
+            android:layout_width="251dp"
+            android:layout_height="43dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/nomusuario"
+            android:inputType="text"
+            android:layout_marginTop="20dp"/>
 
-    <EditText
-        android:id="@+id/et_PhoneU"
-        android:layout_width="251dp"
-        android:layout_height="43dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/numero"
-        android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
+        <!-- Campo apellido -->
+        <EditText
+            android:id="@+id/et_LastnameUser"
+            android:layout_width="251dp"
+            android:layout_height="43dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/apeusuario"
+            android:inputType="text"
+            android:layout_marginTop="15dp"/>
 
-    <Button
-        android:id="@+id/btn_editar"
-        android:layout_width="132dp"
-        android:layout_height="53dp"
-        android:background="@drawable/btn_oval"
-        android:text="@string/editar"
-        android:textColor="@color/azulOsc"
-        android:textSize="25sp"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        <!-- Campo correo -->
+        <EditText
+            android:id="@+id/et_EmailU"
+            android:layout_width="251dp"
+            android:layout_height="43dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/correoE"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="15dp"/>
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="55dp"
-        android:layout_height="37dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        <!-- Campo teléfono -->
+        <EditText
+            android:id="@+id/et_PhoneU"
+            android:layout_width="251dp"
+            android:layout_height="43dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/numero"
+            android:inputType="phone"
+            android:layout_marginTop="15dp"/>
 
-    <TextView
-        android:id="@+id/tv_NombreAppP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_alternates_bold"
-        android:text="@string/app_name"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_editar"
-        app:layout_constraintVertical_bias="0.59" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_editar"
+            android:layout_width="132dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/editar"
+            android:textColor="@color/azulOsc"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"/>
+
+        <!-- Logo y nombre app abajo -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="55dp"
+                android:layout_height="37dp"
+                android:src="@mipmap/ic_launcher_foreground"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_NombreAppP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,184 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cyan">
+    android:background="@color/cyan"
+    android:fillViewport="true">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="155dp"
-        android:layout_height="136dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.026"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
-
-    <TextView
-        android:id="@+id/tv_AppName"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nombreApp"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:fontFamily="@font/montserrat_alternates_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
 
-    <TextView
-        android:id="@+id/tv_Instrucciones"
-        android:layout_width="281dp"
-        android:layout_height="63dp"
-        android:text="@string/instrucciones"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="155dp"
+            android:layout_height="136dp"
+            android:src="@mipmap/ic_launcher_foreground"
+            android:layout_marginTop="20dp" />
 
-    <EditText
-        android:id="@+id/et_Name"
-        android:layout_width="260dp"
-        android:layout_height="45dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/name"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
+        <TextView
+            android:id="@+id/tv_AppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombreApp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:layout_marginTop="10dp" />
 
-    <EditText
-        android:id="@+id/et_Lastname"
-        android:layout_width="260dp"
-        android:layout_height="45dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/apellido"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.485" />
+        <TextView
+            android:id="@+id/tv_Instrucciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instrucciones"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
 
-    <EditText
-        android:id="@+id/et_Email"
-        android:layout_width="260dp"
-        android:layout_height="45dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/correo"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
+        <EditText
+            android:id="@+id/et_Name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/name"
+            android:paddingStart="10dp"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
 
-    <EditText
-        android:id="@+id/et_Password"
-        android:layout_width="260dp"
-        android:layout_height="45dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/contrase_a"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718" />
+        <EditText
+            android:id="@+id/et_Lastname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/apellido"
+            android:paddingStart="10dp"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
 
-    <EditText
-        android:id="@+id/et_Phone"
-        android:layout_width="260dp"
-        android:layout_height="45dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/telefono"
-        android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/correo"
+            android:paddingStart="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp" />
 
-    <EditText
-        android:id="@+id/et_RepPass"
-        android:layout_width="260dp"
-        android:layout_height="45dp"
-        android:background="@drawable/et_oval"
-        android:ems="10"
-        android:hint="@string/repetir_contrase_a"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        <EditText
+            android:id="@+id/et_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/telefono"
+            android:paddingStart="10dp"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
 
-    <Button
-        android:id="@+id/btn_Register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_oval"
-        android:text="@string/registrate"
-        android:textColor="@color/azulOsc"
-        android:textSize="18sp"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/contrase_a"
+            android:paddingStart="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
 
-    <TextView
-        android:id="@+id/tv_Condiciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/terminos"
-        android:textColor="@color/azul"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.692"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853" />
+        <EditText
+            android:id="@+id/et_RepPass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="@string/repetir_contrase_a"
+            android:paddingStart="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
 
-    <CheckBox
-        android:id="@+id/cb_terminos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/acepto"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_oval"
+            android:text="@string/registrate"
+            android:textColor="@color/azulOsc"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <CheckBox
+                android:id="@+id/cb_terminos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acepto"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Condiciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terminos"
+                android:textColor="@color/azul"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
