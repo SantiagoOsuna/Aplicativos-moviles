@@ -4,8 +4,10 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Toast
+
 import android.widget.EditText
 import android.widget.Button
+import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
 
 class RegistroActivity : AppCompatActivity() {
@@ -28,6 +30,7 @@ class RegistroActivity : AppCompatActivity() {
         val etPhone = findViewById<EditText>(R.id.et_Phone)
         val etPassword = findViewById<EditText>(R.id.et_Password)
         val etRepetirPassword = findViewById<EditText>(R.id.et_RepetirPassword)
+        val cbTerminos = findViewById<CheckBox>(R.id.cb_terminos)
         val btnRegistrate = findViewById<Button>(R.id.btn_Registrate)
 
         btnRegistrate.setOnClickListener {
@@ -37,8 +40,9 @@ class RegistroActivity : AppCompatActivity() {
             val telefono = etPhone.text.toString().trim()
             val password = etPassword.text.toString()
             val repetirPassword = etRepetirPassword.text.toString()
+            val cbTerminos = findViewById<CheckBox>(R.id.cb_terminos)
 
-            if (ValidarCampos(nombres, apellidos, email, telefono, password, repetirPassword)) {
+            if (ValidarCampos(nombres, apellidos, email, telefono, password, repetirPassword, cbTerminos)) {
                 guardarDatos(nombres, apellidos, email, telefono, password, repetirPassword)
                 Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
 
@@ -49,7 +53,7 @@ class RegistroActivity : AppCompatActivity() {
         }
     }
 
-    private fun ValidarCampos(nombres: String, apellidos: String, email: String, telefono: String, password: String, repetirPassword: String): Boolean {
+    private fun ValidarCampos(nombres: String, apellidos: String, email: String, telefono: String, password: String, repetirPassword: String, cbTerminos: CheckBox): Boolean {
         if (nombres.isEmpty()){
             Toast.makeText(this, "Ingrese su nombre", Toast.LENGTH_SHORT).show()
             return false
@@ -76,6 +80,10 @@ class RegistroActivity : AppCompatActivity() {
         }
         if (repetirPassword.isEmpty()){
             Toast.makeText(this, "Repita su contraseña", Toast.LENGTH_SHORT).show()
+            return false
+        }
+        if (!cbTerminos.isChecked) {
+            Toast.makeText(this, "Debe aceptar los términos y condiciones", Toast.LENGTH_LONG).show()
             return false
         }
         return true
