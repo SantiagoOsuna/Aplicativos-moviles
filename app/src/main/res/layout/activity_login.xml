@@ -132,8 +132,7 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="42dp"
-                    android:src="@drawable/google"
-                    android:contentDescription="@string/google_icon" />
+                    android:src="@drawable/google"/>
 
                 <Button
                     android:id="@+id/btn_google"
