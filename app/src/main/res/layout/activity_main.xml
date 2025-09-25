@@ -1,19 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
-    <TextView
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:id="@+id/header_layout"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:background="@color/azulOsc"
+           android:orientation="horizontal"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="45dp"
+               android:layout_height="45dp"
+               android:paddingStart="5dp"
+               android:clickable="true"
+               android:focusable="true"
+               android:src="@drawable/ic_menu_hanburguer" />
+
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@mipmap/ic_launcher_foreground"
+               android:paddingStart="10dp"/>
+
+           <TextView
+               android:id="@+id/tv_NameApp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/montserrat_alternates_bold"
+               android:text="@string/nombreApp"
+               android:textAlignment="center"
+               android:textColor="@color/white"
+               android:textSize="42dp"/>
+
+       </LinearLayout>
+
+       <!-- Contenedor de fragments -->
+
+       <FrameLayout
+           android:id="@+id/fragment_container"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu"
+        app:itemIconTint="@null"/> <!-- Para que respete el color original de tus íconos -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

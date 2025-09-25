@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Incagram"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,22 +22,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="false"/>
         <activity
-            android:name=".HomeActivity"
+            android:name=".activities.HomeActivity"
             android:exported="false"/>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="false"/>
         <activity
-            android:name=".PerfilActivity"
+            android:name=".activities.PerfilActivity"
             android:exported="false" />
         <activity
-            android:name=".RecuperacionActivity"
+            android:name=".activities.RecuperacionActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistroActivity"
+            android:name=".activities.RegistroActivity"
             android:exported="false" />
 
         <meta-data

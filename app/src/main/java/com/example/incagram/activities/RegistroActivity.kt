@@ -1,4 +1,4 @@
-package com.example.incagram
+package com.example.incagram.activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.Button
 import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
+import com.example.incagram.R
 
 class RegistroActivity : AppCompatActivity() {
 
