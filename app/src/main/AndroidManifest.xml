@@ -40,6 +40,10 @@
             android:name=".activities.RegistroActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".activities.EditarPerfilActivity"
+            android:exported="false"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

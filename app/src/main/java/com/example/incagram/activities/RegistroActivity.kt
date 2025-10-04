@@ -13,13 +13,13 @@ import com.example.incagram.R
 
 class RegistroActivity : AppCompatActivity() {
 
-    private lateinit var SharedPreferences: SharedPreferences
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        SharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE)
 
         setupOnClickListeners()
     }
@@ -44,7 +44,7 @@ class RegistroActivity : AppCompatActivity() {
             val cbTerminos = findViewById<CheckBox>(R.id.cb_terminos)
 
             if (ValidarCampos(nombres, apellidos, email, telefono, password, repetirPassword, cbTerminos)) {
-                guardarDatos(nombres, apellidos, email, telefono, password, repetirPassword)
+                guardarDatos(nombres, apellidos, email, telefono, password)
                 Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
 
                 val intent = Intent(this, LoginActivity::class.java)
@@ -90,14 +90,13 @@ class RegistroActivity : AppCompatActivity() {
         return true
     }
 
-    private fun guardarDatos(nombres: String, apellidos: String, email: String, telefono: String, password: String, repetirPassword: String) {
-        val editor = SharedPreferences.edit()
+    private fun guardarDatos(nombres: String, apellidos: String, email: String, telefono: String, password: String) {
+        val editor = sharedPreferences.edit()
         editor.putString("nombres", nombres)
         editor.putString("apellidos", apellidos)
         editor.putString("email", email)
         editor.putString("telefono", telefono)
         editor.putString("password", password)
-        editor.putString("repetirPassword", repetirPassword)
         editor.apply()
     }
 }

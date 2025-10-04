@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan"
+    tools:context=".activities.EditarPerfilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar perfil"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:id="@+id/et_NameUser"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="Nombres"
+            android:inputType="textPersonName"
+            android:layout_marginTop="25dp"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/et_LastnameUser"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="Apellidos"
+            android:inputType="textPersonName"
+            android:layout_marginTop="15dp"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/et_EmailU"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="15dp"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/et_PhoneU"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:layout_marginTop="15dp"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/et_CurrentPassword"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="Contraseña actual"
+            android:inputType="textPassword"
+            android:layout_marginTop="25dp"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/et_NewPassword"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/et_oval"
+            android:hint="Nueva contraseña"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="160dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/white"
+            android:text="Guardar cambios"
+            android:textColor="@color/azulOsc"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/azulOsc"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+</ScrollView>

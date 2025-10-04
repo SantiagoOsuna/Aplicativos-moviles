@@ -1,4 +1,4 @@
-package com.example.incagram.fragments
+/*package com.example.incagram.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -30,22 +30,16 @@ class MiPerfilFragment : Fragment() {
         return view
     }
 
-    private fun loadUserData() {
-        val nombres = sharedPreferences.getString("nombres", "")
-        val apellidos = sharedPreferences.getString("apellidos", "")
-        val email = sharedPreferences.getString("email", "")
-        val telefono = sharedPreferences.getString("telefono", "")
-    }
-
         private fun setupSharedPreferences() {
             sharedPreferences = requireActivity().getSharedPreferences(PREF_NAMES, Context.MODE_PRIVATE)
-
         }
         private fun initViews(view: View) {
             tvNombres = view.findViewById(R.id.tv_Nombres)
-            tvApellidos = view.findViewById(R.id.tv_Apellidos)
-            tvEmail = view.findViewById(R.id.tv_Email)
-            tvTelefono = view.findViewById(R.id.tv_Telefono)
+            tvApellidos = view.findViewById(R.id.et_Lastname)
+            tvEmail = view.findViewById(R.id.et_Email)
+            tvTelefono = view.findViewById(R.id.et_Phone)
 
         }
 }
+
+ */

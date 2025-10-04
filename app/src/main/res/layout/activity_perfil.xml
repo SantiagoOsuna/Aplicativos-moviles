@@ -18,7 +18,7 @@
             android:layout_width="206dp"
             android:layout_height="232dp"
             android:src="@drawable/ic_usuario"
-            android:layout_marginTop="40dp"/>
+            android:layout_marginTop="40dp" />
 
         <TextView
             android:id="@+id/tv_Nombres"
@@ -28,43 +28,44 @@
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp" />
 
-        <EditText
-            android:id="@+id/et_NameUser"
-            android:layout_width="251dp"
-            android:layout_height="43dp"
-            android:background="@drawable/et_oval"
-            android:hint="@string/nomusuario"
-            android:inputType="text"
-            android:layout_marginTop="20dp"/>
+        <!-- Campos visibles, solo lectura -->
+        <TextView
+            android:id="@+id/tv_NameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp" />
 
-        <EditText
-            android:id="@+id/et_LastnameUser"
-            android:layout_width="251dp"
-            android:layout_height="43dp"
-            android:background="@drawable/et_oval"
-            android:hint="@string/apeusuario"
-            android:inputType="text"
-            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/tv_LastnameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido del usuario"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp" />
 
-        <EditText
-            android:id="@+id/et_EmailU"
-            android:layout_width="251dp"
-            android:layout_height="43dp"
-            android:background="@drawable/et_oval"
-            android:hint="@string/correoE"
-            android:inputType="textEmailAddress"
-            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/tv_EmailU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="correo@ejemplo.com"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp" />
 
-        <EditText
-            android:id="@+id/et_PhoneU"
-            android:layout_width="251dp"
-            android:layout_height="43dp"
-            android:background="@drawable/et_oval"
-            android:hint="@string/numero"
-            android:inputType="phone"
-            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/tv_PhoneU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123456789"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp" />
 
         <Button
             android:id="@+id/btn_editar"
@@ -74,7 +75,7 @@
             android:text="@string/editar"
             android:textColor="@color/azulOsc"
             android:textSize="25sp"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -88,7 +89,7 @@
                 android:layout_width="55dp"
                 android:layout_height="37dp"
                 android:src="@mipmap/ic_launcher_foreground"
-                android:layout_marginEnd="8dp"/>
+                android:layout_marginEnd="8dp" />
 
             <TextView
                 android:id="@+id/tv_NombreAppP"
@@ -97,7 +98,7 @@
                 android:fontFamily="@font/montserrat_alternates_bold"
                 android:text="@string/app_name"
                 android:textColor="@color/white"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
         </LinearLayout>
 
     </LinearLayout>
