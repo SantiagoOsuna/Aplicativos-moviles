@@ -29,6 +29,7 @@
                android:src="@drawable/ic_menu_hanburguer" />
 
            <ImageView
+               android:id="@+id/ic_menu_hanburguer"
                android:layout_width="60dp"
                android:layout_height="60dp"
                android:src="@mipmap/ic_launcher_foreground"

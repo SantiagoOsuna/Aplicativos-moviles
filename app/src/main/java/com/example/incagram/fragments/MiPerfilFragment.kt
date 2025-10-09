@@ -1,5 +1,6 @@
-/*package com.example.incagram.fragments
+package com.example.incagram.fragments
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,36 +11,61 @@ import com.example.incagram.R
 
 
 class MiPerfilFragment : Fragment() {
-    private lateinit var tvNombres : TextView
-    private lateinit var tvApellidos : TextView
-    private lateinit var tvEmail : TextView
-    private lateinit var tvTelefono : TextView
+    // Inicializar las variables
+    private lateinit var tvNombre: TextView
+    private lateinit var tvApellido: TextView
+    private lateinit var tvCorreo: TextView
+    private lateinit var tvTelefono: TextView
+    private lateinit var sharedPreferences: SharedPreferences
 
     companion object {
-        private const val  PREF_NAMES = "user_prefs"
+        private const val PREFS_NAME = "UserData"
+        private const val KEY_NOMBRE = "nombres"
+        private const val KEY_APELLIDO = "apellidos"
+        private const val KEY_CORREO = "email"
+        private const val KEY_TELEFONO = "telefono"
+
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ):View?{
         val view = inflater.inflate(R.layout.fragment_mi_perfil, container, false)
-        initViews(view)
+
+        inicializarVistas(view)
         setupSharedPreferences()
-        loadUserData()
+        cargarDatosUsuario()
+
         return view
+
     }
 
-        private fun setupSharedPreferences() {
-            sharedPreferences = requireActivity().getSharedPreferences(PREF_NAMES, Context.MODE_PRIVATE)
-        }
-        private fun initViews(view: View) {
-            tvNombres = view.findViewById(R.id.tv_Nombres)
-            tvApellidos = view.findViewById(R.id.et_Lastname)
-            tvEmail = view.findViewById(R.id.et_Email)
-            tvTelefono = view.findViewById(R.id.et_Phone)
+    private fun cargarDatosUsuario() {
+        val nombre = sharedPreferences.getString(KEY_NOMBRE, "") ?: ""
+        val apellido = sharedPreferences.getString(KEY_APELLIDO, "") ?: ""
+        val correo = sharedPreferences.getString(KEY_CORREO, "") ?: ""
+        val telefono = sharedPreferences.getString(KEY_TELEFONO, "") ?: ""
 
-        }
+        //Mostrar la información al usuario
+        tvNombre.text = nombre
+        tvApellido.text = apellido
+        tvCorreo.text = correo
+        tvTelefono.text = telefono
+    }
+
+
+    private fun setupSharedPreferences() {
+        sharedPreferences = requireContext().getSharedPreferences(PREFS_NAME, 0)
+    }
+
+
+
+    private fun inicializarVistas(view: View) {
+        tvNombre = view.findViewById(R.id.tv_NameUser)
+        tvApellido = view.findViewById(R.id.tv_LastnameUser)
+        tvCorreo = view.findViewById(R.id.tv_EmailU)
+        tvTelefono = view.findViewById(R.id.tv_PhoneU)
+    }
 }
-
- */
