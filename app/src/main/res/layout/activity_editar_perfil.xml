@@ -17,7 +17,7 @@
             android:id="@+id/tv_titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Editar perfil"
+            android:text="@string/editar_perfil"
             android:textColor="@color/black"
             android:textSize="28sp"
             android:textStyle="bold"
@@ -28,7 +28,7 @@
             android:layout_width="260dp"
             android:layout_height="45dp"
             android:background="@drawable/et_oval"
-            android:hint="Nombres"
+            android:hint="@string/nombres"
             android:inputType="textPersonName"
             android:layout_marginTop="25dp"
             android:paddingStart="10dp" />
@@ -38,7 +38,7 @@
             android:layout_width="260dp"
             android:layout_height="45dp"
             android:background="@drawable/et_oval"
-            android:hint="Apellidos"
+            android:hint="@string/apellidos"
             android:inputType="textPersonName"
             android:layout_marginTop="15dp"
             android:paddingStart="10dp" />
@@ -48,7 +48,7 @@
             android:layout_width="260dp"
             android:layout_height="45dp"
             android:background="@drawable/et_oval"
-            android:hint="Correo electrónico"
+            android:hint="@string/correo_electronico"
             android:inputType="textEmailAddress"
             android:layout_marginTop="15dp"
             android:paddingStart="10dp" />
@@ -58,7 +58,7 @@
             android:layout_width="260dp"
             android:layout_height="45dp"
             android:background="@drawable/et_oval"
-            android:hint="Teléfono"
+            android:hint="@string/telefono"
             android:inputType="phone"
             android:layout_marginTop="15dp"
             android:paddingStart="10dp" />
@@ -68,7 +68,7 @@
             android:layout_width="260dp"
             android:layout_height="45dp"
             android:background="@drawable/et_oval"
-            android:hint="Contraseña actual"
+            android:hint="@string/contrasena_actual"
             android:inputType="textPassword"
             android:layout_marginTop="25dp"
             android:paddingStart="10dp" />
@@ -78,7 +78,7 @@
             android:layout_width="260dp"
             android:layout_height="45dp"
             android:background="@drawable/et_oval"
-            android:hint="Nueva contraseña"
+            android:hint="@string/nueva_contrasena"
             android:inputType="textPassword"
             android:layout_marginTop="15dp"
             android:paddingStart="10dp" />
@@ -88,7 +88,7 @@
             android:layout_width="160dp"
             android:layout_height="53dp"
             android:backgroundTint="@color/white"
-            android:text="Guardar cambios"
+            android:text="@string/guardarcambios"
             android:textColor="@color/azulOsc"
             android:textSize="20sp"
             android:layout_marginTop="30dp" />
@@ -98,7 +98,7 @@
             android:layout_width="140dp"
             android:layout_height="53dp"
             android:backgroundTint="@color/azulOsc"
-            android:text="Cancelar"
+            android:text="@string/cancelar"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:layout_marginTop="15dp" />

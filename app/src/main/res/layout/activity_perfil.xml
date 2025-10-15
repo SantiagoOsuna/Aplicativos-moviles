@@ -35,7 +35,7 @@
             android:id="@+id/tv_NameUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre de usuario"
+            android:text="@string/nombre_usuario"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_marginTop="15dp" />
@@ -44,7 +44,7 @@
             android:id="@+id/tv_LastnameUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apellido del usuario"
+            android:text="@string/apellido_usuario"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_marginTop="15dp" />
@@ -53,7 +53,7 @@
             android:id="@+id/tv_EmailU"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="correo@ejemplo.com"
+            android:text="@string/correo_ejemplo"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_marginTop="15dp" />
@@ -62,7 +62,7 @@
             android:id="@+id/tv_PhoneU"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456789"
+            android:text="@string/telefono_v"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_marginTop="15dp" />
